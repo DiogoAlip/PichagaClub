@@ -1,6 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  height: 100vh;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -60,7 +61,7 @@ a:hover {
   justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
-  padding-bottom: 40px;
+  padding: 25px 0px 45px 0px;
 }
 
 .white-background-gradiant_container h2 {
@@ -68,7 +69,6 @@ a:hover {
   font-weight: 1000;
   line-height: 86%;
   color: #f26b1d;
-  max-width: 300px;
 }
 
 .white-background-gradiant_container h4 {
@@ -80,23 +80,23 @@ a:hover {
 
 .paragrahps_container {
   width: 50%;
-  min-width: 450px;
+  min-width: 412px;
   display: flex;
   flex-direction: column;
-  padding: 60px 7% 0px 7%;
+  justify-content: baseline;
+  padding: 60px 5% 0px 5%;
   box-sizing: border-box;
 }
 
 .request_container {
-  width: 50%;
-  min-width: 450px;
+  width: 412;
   padding: 20px 30px;
   box-sizing: border-box;
 }
 
 .request {
   background-color: aliceblue;
-  width: 90%;
+  width: 100%;
   height: 260px;
   display: flex;
   flex-direction: column;
@@ -120,6 +120,8 @@ input {
   border-width: 0px;
   background-color: transparent;
   width: 100%;
+  font-size: 15px;
+  padding: 0px;
 }
 
 form p {
@@ -133,6 +135,25 @@ input:focus {
 
 footer {
   width: 100%;
-  height: 80px;
+  height: 65px;
   background-color: #005140;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons-container {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 30px;
+  filter: invert(1);
+}
+
+footer h4 {
+  color: white;
 }
