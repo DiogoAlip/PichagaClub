@@ -7,6 +7,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  height: 100vh;
 }
 
 a {
@@ -94,7 +95,7 @@ main {
 }
 
 .contact-form {
-  width: 45%;
+  width: 40%;
 }
 
 .contact-form h2 {
@@ -105,6 +106,7 @@ main {
 .contact-form form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .contact-form label {
@@ -121,6 +123,7 @@ main {
   color: white;
   font-size: 14px;
   border: none;
+  box-sizing: border-box;
 }
 
 .contact-form input:focus,
@@ -138,6 +141,7 @@ main {
 }
 
 footer {
+  margin-top: 100px;
   color: white;
   text-align: center;
   padding: 20px;
