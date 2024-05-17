@@ -2,8 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ddd;
-  color: black;
+  background-image: url("./../src/encabezado.PNG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 header {
@@ -40,7 +43,7 @@ nav ul li a {
 
 .auth-buttons button {
   background-color: gray;
-  color: black;
+  color: white;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -49,6 +52,7 @@ nav ul li a {
 
 .auth-buttons .register {
   background-color: #f26b1d;
+  color: white;
 }
 
 main {
@@ -81,6 +85,7 @@ main {
 .contact-info .social-icons img {
   width: 30px;
   margin-right: 10px;
+  filter: invert(1);
 }
 
 .contact-form {
@@ -107,8 +112,16 @@ main {
   padding: 10px;
   margin-bottom: 10px;
   background-color: gray;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
   border: none;
-  color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: none;
+  outline: none;
 }
 
 .contact-form button {
@@ -120,7 +133,50 @@ main {
 }
 
 footer {
+  color: white;
   text-align: center;
   padding: 20px;
   background-color: #005140;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .auth-buttons button {
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
 }
